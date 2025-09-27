@@ -20,7 +20,8 @@ numerical_features = ['reading score', 'writing score']
 
 # Preprocessing
 numeric_transformer = StandardScaler()
-categorical_transformer = OneHotEncoder(sparse=False, handle_unknown='ignore')
+categorical_transformer = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+
 
 preprocessor = ColumnTransformer(
     transformers=[
